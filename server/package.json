@@ -4,9 +4,13 @@
   "description": "AI Investment Research Agent — Backend",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node index.js",
-    "dev": "node --watch index.js"
+    "dev": "node --watch index.js",
+    "build": "echo 'No build step needed'"
   },
   "dependencies": {
     "@langchain/anthropic": "^0.3.0",
