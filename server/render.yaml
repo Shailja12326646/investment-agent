@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: investment-agent-api
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
